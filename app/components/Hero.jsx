@@ -39,7 +39,7 @@ const Hero = () => {
     },
   }
 
-  const titleText = "SYED MOHIB NAWAZ"
+  const titleText = "SYED MOHIB"
 
   return (
     <motion.div
@@ -55,18 +55,18 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 flex flex-col lg:flex-row justify-between items-center gap-12 z-10">
         <motion.div
-          className="lg:w-1/2"
+          className="w-full lg:w-[80%]"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.h1
-            className="audiowide text-5xl md:text-7xl font-semibold leading-tight"
+            className="audiowide text-5xl lg:text-6xl font-semibold leading-tight"
             variants={titleVariants}
             initial="hidden"
             animate="visible"
           >
-            <span className="inline-block overflow-hidden">
+            <span className="inline-block overflow-hidden text-left">
               {titleText.split("").map((letter, index) => (
                 <motion.span
                   key={index}
@@ -112,17 +112,18 @@ const Hero = () => {
                 </div>
                 <p className="text-[#a0a0a0] mt-2 group-hover:text-cyan-400 transition-all duration-300">LinkedIn</p>
               </Link>
-              <Link
-                href="/resume.pdf"
+              <a
+                href="./mohib-resume.pdf"
                 className="group flex flex-col items-center transition-all duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
+                download="mohib-resume.pdf"
+                aria-label="Download Mohib's Resume"
+
               >
                 <div className="relative overflow-hidden rounded-full p-3 bg-white/5 group-hover:bg-white/10 transition-all duration-300">
                   <IoDocumentAttachSharp className="h-8 w-8 group-hover:text-cyan-400 transition-all duration-300" />
                 </div>
                 <p className="text-[#a0a0a0] mt-2 group-hover:text-cyan-400 transition-all duration-300">Resume</p>
-              </Link>
+              </a>
             </div>
           </motion.div>
         </motion.div>

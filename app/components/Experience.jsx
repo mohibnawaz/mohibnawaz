@@ -6,33 +6,27 @@ import { FiBriefcase, FiCalendar, FiMapPin } from "react-icons/fi"
 const experiences = [
   {
     id: 1,
-    role: "Senior Full Stack Developer",
-    company: "Tech Innovations Inc.",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
-    description:
-      "Led the development of a high-traffic e-commerce platform, improving performance by 40%. Implemented microservices architecture and mentored junior developers.",
-    skills: ["React", "Node.js", "AWS", "MongoDB", "Docker"],
+    institue: "Chandigarh group of colleges",
+    degree: "B.Tech CSE",
+    location: "Mohali, Punjab",
+    period: "2021 - Present",
+
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "Digital Solutions Ltd.",
-    location: "New York, NY",
-    period: "2020 - 2022",
-    description:
-      "Developed and maintained multiple client projects using modern JavaScript frameworks. Collaborated with design and product teams to deliver high-quality web applications.",
-    skills: ["JavaScript", "React", "Express", "PostgreSQL", "Redux"],
+    institue: "Heritage Children academy",
+    degree: "Intermediate",
+    location: "Rampur, UP",
+    period: "2020 - 2021",
+
   },
   {
     id: 3,
-    role: "Frontend Developer",
-    company: "Creative Web Agency",
-    location: "Boston, MA",
-    period: "2018 - 2020",
-    description:
-      "Created responsive and interactive user interfaces for various client websites. Implemented best practices for web accessibility and performance optimization.",
-    skills: ["HTML/CSS", "JavaScript", "React", "SASS", "Webpack"],
+    institue: "Heritage Children academy",
+    degree: "High School",
+    location: "Rampur, UP",
+    period: "2018 - 2019",
+
   },
 ]
 
@@ -64,8 +58,8 @@ const ExperienceCard = ({ experience, index, isOdd }) => {
         transition={{ duration: 0.6, delay: index * 0.2 }}
         whileHover={{ y: -5 }}
       >
-        <h3 className="text-xl font-bold text-white mb-1">{experience.role}</h3>
-        <h4 className="text-lg text-cyan-400 mb-4">{experience.company}</h4>
+        <h3 className="text-xl font-bold text-white mb-1">{experience.institue}</h3>
+        <h4 className="text-lg text-cyan-400 mb-4">{experience.degree}</h4>
 
         <div className="flex flex-wrap gap-4 mb-4 text-sm text-white/70">
           <div className="flex items-center gap-1">
@@ -76,16 +70,6 @@ const ExperienceCard = ({ experience, index, isOdd }) => {
             <FiMapPin className="w-4 h-4" />
             <span>{experience.location}</span>
           </div>
-        </div>
-
-        <p className="text-white/70 mb-4">{experience.description}</p>
-
-        <div className="flex flex-wrap gap-2">
-          {experience.skills.map((skill) => (
-            <span key={skill} className="text-xs px-3 py-1 rounded-full bg-white/10 text-cyan-300">
-              {skill}
-            </span>
-          ))}
         </div>
       </motion.div>
     </div>
@@ -107,10 +91,10 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 audiowide">
-            <span className="text-cyan-400">E</span>xperience
+            <span className="text-cyan-400">J</span>ourney
           </h2>
           <p className="text-white/70 max-w-2xl mx-auto">
-            My professional journey and the valuable experience I've gained along the way.
+            My Academics journey and the valuable experience I've gained along the way.
           </p>
         </motion.div>
 

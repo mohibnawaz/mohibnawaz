@@ -51,7 +51,7 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-xl blur-xl" />
               <div className="relative aspect-square overflow-hidden rounded-xl border border-white/10">
-                <Image src="/placeholder.svg?height=600&width=600" alt="Mohib Nawaz" fill className="object-cover" />
+                <Image src="/hero.jpg" alt="Mohib Nawaz" fill className=" object-contain" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-lg -z-10 blur-xl opacity-70" />
             </div>
@@ -74,20 +74,7 @@ const About = () => {
               collaborate on impactful projects that combine technology and creativity.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                <h4 className="font-bold text-xl text-cyan-400">5+</h4>
-                <p className="text-white/70">Years Experience</p>
-              </div>
-              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                <h4 className="font-bold text-xl text-cyan-400">50+</h4>
-                <p className="text-white/70">Projects Completed</p>
-              </div>
-              <div className="bg-white/5 p-4 rounded-lg backdrop-blur-sm">
-                <h4 className="font-bold text-xl text-cyan-400">20+</h4>
-                <p className="text-white/70">Happy Clients</p>
-              </div>
-            </div>
+            
 
             <motion.a
               href="#contact"

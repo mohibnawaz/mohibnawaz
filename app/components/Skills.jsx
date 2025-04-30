@@ -6,10 +6,9 @@ const skills = [
   {
     category: "Frontend",
     items: [
-      { name: "React", level: 90 },
-      { name: "Next.js", level: 85 },
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 80 },
+      { name: "React", level: 80 },
+      { name: "Next.js", level: 75 },
+      { name: "JavaScript", level: 80 },
       { name: "HTML/CSS", level: 90 },
       { name: "TailwindCSS", level: 85 },
     ],
@@ -20,8 +19,6 @@ const skills = [
       { name: "Node.js", level: 85 },
       { name: "Express", level: 80 },
       { name: "MongoDB", level: 75 },
-      { name: "PostgreSQL", level: 70 },
-      { name: "GraphQL", level: 65 },
       { name: "REST API", level: 90 },
     ],
   },
@@ -30,9 +27,6 @@ const skills = [
     items: [
       { name: "Git", level: 85 },
       { name: "Docker", level: 70 },
-      { name: "AWS", level: 65 },
-      { name: "CI/CD", level: 75 },
-      { name: "Testing", level: 80 },
       { name: "Agile", level: 85 },
     ],
   },

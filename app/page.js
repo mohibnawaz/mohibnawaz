@@ -64,7 +64,7 @@ export default function Home() {
       </AnimatePresence>
 
       <Navigation />
-      <main>
+      <main className = "mt-16 lg:mt-0">
         <Hero />
         <About />
         <Projects />

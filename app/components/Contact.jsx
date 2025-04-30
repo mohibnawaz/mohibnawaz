@@ -42,20 +42,20 @@ const Contact = () => {
     {
       icon: <FiMail className="w-6 h-6" />,
       title: "Email",
-      content: "mohib@example.com",
-      link: "mailto:mohib@example.com",
+      content: "nawazsyed8402@gmail.com",
+      link: "nawazsyed8402@gmail.com",
     },
     {
       icon: <FiPhone className="w-6 h-6" />,
       title: "Phone",
-      content: "+1 (123) 456-7890",
-      link: "tel:+11234567890",
+      content: "7017966210",
+      link: "tel:+917017966210",
     },
     {
       icon: <FiMapPin className="w-6 h-6" />,
       title: "Location",
-      content: "San Francisco, CA",
-      link: "https://maps.google.com/?q=San+Francisco,+CA",
+      content: "Bareilly, UP",
+      link: "",
     },
   ]
 
